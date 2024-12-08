@@ -9,16 +9,16 @@
             height:250px;
             width:250px;
         }
-        .clicks {
+        p {
             margin-left:250px;
         }
     </style>
 </head>
 <body>
     <button onclick="Plus()">Clicker!</button>
-    <p class="clicks">Clicks: 0</p>
+    <p id="clicks">Clicks: 0</p>
     <script>
-        let clicktext = document.querySelector("clicks");
+        let clicktext = document.getElementById("clicks");
         var a = 0;
         function Plus() {
             a++;
