@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My GitHub Pages Site</title>
+    <title>Google Classroom</title>
+    <style>
+        button {
+            margin-left:250px;
+            margin-top:250px;
+            height:250px;
+            width:250px;
+        }
+        .clicks {
+            margin-left:250px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is a simple static site hosted with GitHub Pages.</p>
+    <button onclick="Plus()">Clicker!</button>
+    <p class="clicks">Clicks: 0</p>
+    <script>
+        let clicktext = document.querySelector("clicks");
+        var a = 0;
+        function Plus() {
+            a++;
+            clicktext.textContent = "Clicks: "+a;
+        }
+    </script>
 </body>
 </html>
